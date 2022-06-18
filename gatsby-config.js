@@ -22,5 +22,6 @@ module.exports = {
     //   },
     //   __key: "pages"
     // }
+    "gatsby-transformer-sharp",
   ]
 };

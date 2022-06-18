@@ -10,7 +10,7 @@ const PostsPage = ({ data }) => {
                 data.allMdx.nodes.map((node) => (
                     <article key={node.id}>
                     <h2>
-                      <Link to={`/posts/${node.slug}/`}>
+                      <Link to={`/posts/${node.slug}`}>
                         {node.frontmatter.name}
                       </Link>
                     </h2>
@@ -32,7 +32,6 @@ export const query = graphql`
             datePublished
           }
           id
-          body
           slug
         }
       }
